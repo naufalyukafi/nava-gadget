@@ -14,6 +14,6 @@ Object.defineProperty(window, 'matchMedia', {
 
 test('renders project page', () => {
     const { getByText } = render(<ProjectPage />);
-    const linkElement = getByText("NAVA STORE");
+    const linkElement = getByText("Gadged Store");
     expect(linkElement).toBeInTheDocument();
 });
