@@ -6,8 +6,8 @@ import { RegisterPage } from './Register';
 const AuthPage = () => {
   return (
     <Switch>
-      <Route path="/auth/login" component={LoginPage} />
-      <Route path="/auth/register" component={RegisterPage} />
+      <Route exact path="/auth/login" component={LoginPage} />
+      <Route exact path="/auth/register" component={RegisterPage} />
       <Redirect to="/auth/login" />
     </Switch>
   );
