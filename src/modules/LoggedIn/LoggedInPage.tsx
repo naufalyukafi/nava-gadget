@@ -4,8 +4,7 @@ import ProjectPage from './Projects/ProjectPage';
 const LoggedInPage = () => {
   return (
     <Switch>
-      <Route path="/project" component={ProjectPage} />
-      <Redirect to="/project" />
+      <Route exact path="/project" component={ProjectPage} />
     </Switch>
   );
 };
