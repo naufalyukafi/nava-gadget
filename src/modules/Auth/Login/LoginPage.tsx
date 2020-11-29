@@ -1,6 +1,6 @@
 import React from 'react';
-import "./styleComponent.css";
-import {Link} from "react-router-dom";
+import "../styleComponent.css";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     // <!-- Main Container -->
@@ -23,7 +23,7 @@ const LoginPage = () => {
               <i className="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" className="btn solid" />
+            <Link to="/project"><input type="submit" value="Login" className="btn solid" /></Link>
             <p className="social-text">Or Sign in with social platforms</p>
             <div className="social-media">
               <a href="#" className="social-icon">
@@ -50,10 +50,10 @@ const LoginPage = () => {
           <div className="content">
             <h3 className="welcome">NAVA GADGET STORE</h3>
             <p>
-              Don't find the devices that you looking for ? find it on Nava Gadget Store    Choose, Buy, and Enjoy. 
+              Don't find the devices that you looking for ? find it on Nava Gadget Store    Choose, Buy, and Enjoy.
             </p>
             <button className="btn transparent" id="sign-up-btn">
-              <Link style={{ color:"white"}} to="/auth/login">Sign In</Link>
+              <Link style={{ color: "white" }} to="/auth/register">Sign In</Link>
             </button>
           </div>
           <img src="/img/log.svg" className="image" alt="" />

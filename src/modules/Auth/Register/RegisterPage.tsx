@@ -1,6 +1,6 @@
 import React from 'react';
-import "./styleComponent.css";
-import {Link} from "react-router-dom";
+import "../styleComponent.css";
+import { Link } from "react-router-dom";
 const RegisterPage = () => {
   return (
     //<!-- Main Container -->
@@ -11,7 +11,7 @@ const RegisterPage = () => {
 
         {/* <!-- Signin and Signup Container --> */}
         <div className="signin-signup">
-        {/* <!-- Sign up form --> */}
+          {/* <!-- Sign up form --> */}
           <form action="#" className="sign-up-form">
             <h2 className="title">Sign up</h2>
             <div className="input-field">
@@ -33,7 +33,7 @@ const RegisterPage = () => {
       </div>
       {/* <!-- Panel Container --> */}
       <div className="panels-container">
-      {/* <!-- Right Panel Container --> */}
+        {/* <!-- Right Panel Container --> */}
         <div className="panel right-panel">
           <div className="content">
             <h3>One of us ?</h3>
@@ -41,7 +41,7 @@ const RegisterPage = () => {
               Get the device you deserve, find it on Nava Gadget Store Choose, Buy, and Enjoy.
             </p>
             <button className="btn transparent" id="sign-in-btn">
-              <Link style={{ color:"white"}} to="/auth/register">Sign Up</Link>
+              <Link style={{ color: "white" }} to="/auth/register">Sign Up</Link>
             </button>
           </div>
           <img src="/img/register.svg" className="image" alt="" />
