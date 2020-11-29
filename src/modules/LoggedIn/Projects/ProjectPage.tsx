@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Typography, Row, Col, Input, Select, Button } from 'antd';
+import NewCardList from './NewCardList';
 const { Search } = Input;
 const { Option } = Select;
 
@@ -34,7 +35,12 @@ const ProjectPage = () => {
           </Col>
         </Row>
       </Layout.Header>
-      <Layout.Content style={{ padding: 50 }}></Layout.Content>
+      <Layout.Content style={{ padding: 50 }}>
+        <NewCardList />
+      </Layout.Content>
+      <Layout.Footer style={{ textAlign: 'center', fontWeight: 'bold', backgroundColor: '#fff' }}>
+        Create By Yukafi & Shifa
+      </Layout.Footer>
     </Layout>
   );
 };
