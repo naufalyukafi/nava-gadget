@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layout, Typography, Row, Col, Input, Select, Button } from 'antd';
+import "./ProjectPage.css";
+import { Layout, Typography, Row, Col, Input, Select, Button } from 'antd'
 import NewCardList from './NewCardList';
 import Categories from './Categories';
 const { Search } = Input;
@@ -16,7 +17,7 @@ const ProjectPage = () => {
           <Col>
             <Typography.Title level={4} style={{ fontWeight: 'bold' }}>Gadged Store</Typography.Title>
           </Col>
-          <Col>
+          <Col className="navbar-select">
             <Select
               showSearch
               style={{ width: 200 }}
@@ -27,12 +28,12 @@ const ProjectPage = () => {
               <Option value="inggris">Inggris</Option>
             </Select>
           </Col>
-          <Col>
-            <Search className='searchProduct' placeholder="input search text" onSearch={onSearch} enterButton style={{ marginTop: 15, minWidth: 500 }} />
+          <Col className='navbar-search' >
+            <Search placeholder="input search text" onSearch={onSearch} enterButton style={{ marginTop: 15, minWidth: 300 }} />
           </Col>
           <Col>
-            <Button type="primary" style={{ marginRight: 20 }}>DAFTAR</Button>
-            <Button type="primary">LOGIN</Button>
+            <Button className="signup" type="primary" style={{ marginRight: 20 }}>DAFTAR</Button>
+            <Button className="signin" type="primary">LOGIN</Button>
           </Col>
         </Row>
       </Layout.Header>

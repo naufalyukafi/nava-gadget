@@ -1,0 +1,23 @@
+/* tablet */
+@media screen and (max-width: 992px) {
+    .navbar-select{
+        display: none;
+    }
+    .navbar-search {
+      display: none;
+    }
+    .site-content{
+      align-items: center;
+    }
+}
+  
+/* phone */
+@media screen and (max-width: 600px) {
+  .navbar-select{
+    display: none;
+    background-color: orange;
+  }
+  .navbar-search {
+    display: none;
+  }
+}
