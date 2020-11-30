@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout, Typography, Row, Col, Input, Select, Button } from 'antd';
 import NewCardList from './NewCardList';
+import Categories from './Categories';
 const { Search } = Input;
 const { Option } = Select;
 
@@ -9,7 +10,7 @@ const ProjectPage = () => {
   const onSearch = () => console.log("coba");
 
   return (
-    <Layout style={{ height: '100vh' }}>
+    <Layout>
       <Layout.Header style={{ backgroundColor: '#fff' }}>
         <Row align="middle" justify="space-around" >
           <Col>
@@ -36,6 +37,7 @@ const ProjectPage = () => {
         </Row>
       </Layout.Header>
       <Layout.Content style={{ padding: 50 }}>
+        <Categories />
         <NewCardList />
       </Layout.Content>
       <Layout.Footer style={{ textAlign: 'center', fontWeight: 'bold', backgroundColor: '#fff' }}>
