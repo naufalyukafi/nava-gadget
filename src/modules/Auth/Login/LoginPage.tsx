@@ -48,7 +48,7 @@ const LoginPage = () => {
         {/* <!-- Left Panel Container --> */}
         <div className="panel left-panel">
           <div className="content">
-            <h3 className="welcome">NAVA GADGET STORE</h3>
+            <h3 style={{ color:"white", letterSpacing:"4px"}}>NAVA GADGET STORE</h3>
             <p>
               Don't find the devices that you looking for ? find it on Nava Gadget Store    Choose, Buy, and Enjoy.
             </p>
