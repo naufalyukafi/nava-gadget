@@ -9,9 +9,11 @@ const NewCardList = () => {
             <Row align="middle" justify="start" gutter={[16, 16]} >
                 {productListDemo.map((item: IProject) => (
                     <div>
-                        <Col>
-                            <CardList image={item.image} id={item.id} category={item.category} description={item.description} price={item.price} location={item.location} key={item.id} />
-                        </Col>
+                        <a href="/project/detail">
+                            <Col>
+                                <CardList image={item.image} id={item.id} category={item.category} description={item.description} price={item.price} location={item.location} key={item.id} />
+                            </Col>
+                        </a>
                     </div>
                 ))}
             </Row>
