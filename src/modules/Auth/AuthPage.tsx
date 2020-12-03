@@ -5,13 +5,11 @@ import { RegisterPage } from './Register';
 
 const AuthPage = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/auth/login" component={LoginPage} />
-        <Route exact path="/auth/register" component={RegisterPage} />
-        <Redirect to="/auth/login" />
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route exact path="/auth/login" component={LoginPage} />
+      <Route exact path="/auth/register" component={RegisterPage} />
+      <Redirect to="/auth/login" />
+    </Switch>
   );
 };
 
