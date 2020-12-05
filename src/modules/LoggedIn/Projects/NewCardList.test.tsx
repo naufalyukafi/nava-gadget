@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ProjectPage from "./ProjectPage";
+import NewCardList from "./NewCardList"
 
 Object.defineProperty(window, 'matchMedia', {
     value: () => {
@@ -12,8 +12,6 @@ Object.defineProperty(window, 'matchMedia', {
     }
 })
 
-test('renders project page', () => {
-    const { getByText } = render(<ProjectPage />);
-    const linkElement = getByText("Gadged Store");
-    expect(linkElement).toBeInTheDocument();
+test('renders new card list', () => {
+    render(<NewCardList />);
 });
