@@ -1,15 +1,23 @@
 import React from 'react';
 import "./ProjectPage.css";
-import { Layout, Typography, Row, Col, Input, Select, Button } from 'antd'
+import { Layout, Typography, Row, Col, Input, Select, Button, message, Avatar } from 'antd'
+import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
+import { useHistory } from "react-router-dom"
 import NewCardList from './NewCardList';
 import Categories from './Categories';
+import firebase from '../../firebase'
 const { Search } = Input;
 const { Option } = Select;
 
 const ProjectPage = () => {
-
+  let history = useHistory();
   const onSearch = () => console.log("coba");
 
+  if (!firebase.getCurrentUsername()) {
+    message.warning("please loggin first!")
+    history.push('/auth/login')
+    return null
+  }
   return (
     <Layout>
       <Layout.Header style={{ backgroundColor: '#fff' }}>
@@ -32,8 +40,8 @@ const ProjectPage = () => {
             <Search placeholder="input search text" onSearch={onSearch} enterButton style={{ marginTop: 15, minWidth: 300 }} />
           </Col>
           <Col>
-            <Button className="signup" type="primary" style={{ marginRight: 20 }}>DAFTAR</Button>
-            <Button className="signin" type="primary">LOGIN</Button>
+            <Avatar icon={<UserOutlined />} /> <strong>Hello, {firebase.getCurrentUsername()}</strong>
+            <Button style={{ marginLeft: 15 }} onClick={logout}>Logout</Button>
           </Col>
         </Row>
       </Layout.Header>
@@ -46,6 +54,11 @@ const ProjectPage = () => {
       </Layout.Footer>
     </Layout>
   );
+  async function logout() {
+    await firebase.logout()
+    history.push("/auth/login")
+    window.location.reload()
+  }
 };
 
 export default ProjectPage;
