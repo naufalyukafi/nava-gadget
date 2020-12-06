@@ -5,6 +5,9 @@ export interface IProject {
     category: string
     description: string
     location: string
+    detailTitle?: string
+    detailDescription?: string
+    name?: string
 }
 
 export const productListDemo: IProject[] = [
@@ -15,6 +18,9 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
+
     },
     {
         id: 2,
@@ -23,6 +29,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 3,
@@ -31,6 +39,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 4,
@@ -39,6 +49,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 5,
@@ -47,6 +59,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 6,
@@ -55,6 +69,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 7,
@@ -63,6 +79,8 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
     {
         id: 8,
@@ -71,5 +89,7 @@ export const productListDemo: IProject[] = [
         category: "Elektronik",
         description: "Xiaomi Mi Gaming Laptop 2019 ",
         location: "Lumajang, Jawa Timur",
+        detailTitle: "SIAP KIRIM KE SELURUH INDONESIA",
+        detailDescription: "Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C support 9v (ORI 1OO) Charger adalah salah satu alat vital untuk sebuah gadget. Jika charger anda rusak, membeli produk ini adalah pilihan yang tepat buat anda. Gunakanlah selalu charger original untuk mencharging gadget anda. Menggunakan charger palsu, selain ada resiko dapat merusak gadget, biasanya charger palsu juga tidak tahan lama, cepat rusak, suply daya tidak stabil, dll. Anda juga dapat membeli produk ini sebagai charger cadangan. Memiliki charger cadangan sangat berguna untuk dibawa-bawa untuk menrecharge gadget anda saat berpergian,berlibur,dll. Charger ini support output 9V fast charging, jadi sangat cepat untuk mencharging Gadget yang dilengkapi fitur fast charging juga seperti Xiaomi mi5, Samsung Galaxy Note 7, A5 2017, A7 2017,dll. Jika Charger ini digunakan untuk Gadget yang tidak memiliki fitur Fast Charging, maka charger ini beroperasi secara normal seperti charger 2A pada umumnya."
     },
 ]

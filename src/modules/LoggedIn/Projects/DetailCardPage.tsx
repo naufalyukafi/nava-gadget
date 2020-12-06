@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout, Typography, Row, Col, Input, Select, Button, Carousel, Card } from 'antd';
 import { PhoneOutlined } from '@ant-design/icons';
+import "../../../App";
 
 const DetailCardPage = () => {
     function onChange({ a, b, c }: any) {
@@ -8,9 +9,9 @@ const DetailCardPage = () => {
     }
     return (
         <div>
-            <Row justify="space-between">
-                <Col span={8} >
-                    <Carousel style={{ minWidth: 800 }} afterChange={onChange} >
+            <Row justify="space-around" gutter={[24, 16]} style={{ marginTop: 20 }} >
+                <Col>
+                    <Carousel className="detail-caraousel" style={{ width: 600 }} afterChange={onChange} >
                         <div>
                             <h3 style={{ height: 160, color: 'white', lineHeight: 160, textAlign: 'center', background: '#364d79' }}>1</h3>
                         </div>
@@ -21,7 +22,7 @@ const DetailCardPage = () => {
                             <h3 style={{ height: 160, color: 'white', lineHeight: 160, textAlign: 'center', background: '#364d79' }}>3</h3>
                         </div>
                     </Carousel>
-                    <Card style={{ minWidth: 800, border: '1px solid black', height: 500 }}>
+                    <Card className="detail-product" style={{ width: 600, border: '1px solid black' }}>
                         <Typography.Title level={3} style={{ fontWeight: 'bold' }} >SIAP KIRIM KE SELURUH INDONESIA</Typography.Title>
                         <Typography.Text style={{ marginTop: 3 }} >Charger Hp Samsung Galaxy S8 Original 100% Fast Charging USB Type-C
                         support 9v (ORI 1OO)
@@ -34,7 +35,7 @@ const DetailCardPage = () => {
                     </Card>
                 </Col>
                 <Col>
-                    <Card style={{ width: 400, border: '1px solid black' }}>
+                    <Card className="detail-price" style={{ width: 400, border: '1px solid black' }}>
                         <Typography.Text >Charger Samsung S8 S8+ Note 8 S9 S9  plus fast charging tipe coriginal 100%</Typography.Text>
                         <Row justify="space-between" align="middle" style={{ marginTop: 20 }}>
                             <Col>
@@ -45,7 +46,7 @@ const DetailCardPage = () => {
                             </Col>
                         </Row>
                     </Card>
-                    <Card style={{ width: 400, border: '1px solid black', marginTop: 20 }}>
+                    <Card className="detail-chat" style={{ width: 400, border: '1px solid black', marginTop: 20 }}>
                         <Row align="middle" justify="center">
                             <Col style={{ marginRight: 5 }} ><PhoneOutlined /></Col>
                             <Col style={{ color: 'black' }}>Suloyo Aji - Toko Elektronik</Col>

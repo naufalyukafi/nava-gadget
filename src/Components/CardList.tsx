@@ -4,7 +4,7 @@ import { IProject } from "../modules/LoggedIn/Projects/ProjectListDumy"
 const CardList = (props: IProject) => {
     return (
         <Card hoverable
-            style={{ width: 300, borderRadius: 10 }}
+            style={{ width: 250, borderRadius: 10 }}
             cover={<img src={props.image} />} >
             <Row align="middle" justify="space-between" style={{ fontWeight: "bold" }}>
                 <Col>{props.price}</Col>
