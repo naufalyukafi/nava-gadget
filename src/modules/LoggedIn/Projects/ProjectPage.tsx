@@ -23,6 +23,13 @@ const ProjectPage = () => {
   const onClose = () => {
     setVisible(false);
   };
+
+  if (!firebase.getCurrentUsername()) {
+    message.info("please loggin first")
+    history.push("/auth")
+    return null
+  }
+
   return (
     <Layout>
       <Layout.Header style={{ backgroundColor: '#fff' }}>
