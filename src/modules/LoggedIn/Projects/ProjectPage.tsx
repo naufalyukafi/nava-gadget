@@ -81,7 +81,7 @@ const ProjectPage = () => {
         <NewCardList />
       </Layout.Content>
       <Layout.Footer style={{ textAlign: 'center' }}>
-        <div className="copyright">Copyright &copy; 2020, Create By Yukafi & Shifa</div>
+        <div className="copyright">Copyright &copy; 2020, Create By Yukafi & Shiva</div>
         <BackTop>
           <Avatar icon={<UpCircleOutlined />} style={{ backgroundColor: 'blueviolet' }} />
         </BackTop>

@@ -50,7 +50,7 @@ const DetailCardPage = () => {
                         <Row align="middle" justify="center">
                             <Col style={{ marginRight: 5 }} ><PhoneOutlined /></Col>
                             <Col style={{ color: 'black' }}>Suloyo Aji - Toko Elektronik</Col>
-                            <Button type="primary" style={{ marginTop: 10, minWidth: '100%', color: 'black', fontWeight: 'bold' }} >Chat denga penjual</Button>
+                            <Button type="primary" style={{ marginTop: 10, minWidth: '100%', color: 'black', fontWeight: 'bold' }} >Chat dengan penjual</Button>
                         </Row>
                     </Card>
                 </Col>
