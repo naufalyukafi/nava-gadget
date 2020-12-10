@@ -3,6 +3,7 @@ import { Row, Col, Typography } from 'antd';
 import { productListDemo, IProject } from "./ProjectListDumy"
 import { CardList } from "../../../Components"
 import "./NewCardList.css";
+
 const NewCardList = () => {
     return (
         <div>
@@ -11,7 +12,7 @@ const NewCardList = () => {
                 {productListDemo.map((item: IProject) => (
                     <a href="/project/detail">
                         <Col>
-                            <CardList image={item.image} id={item.id} category={item.category} description={item.description} price={item.price} location={item.location} key={item.id} />
+                            <CardList image={item.image} id={item.id} category={item.category} title={item.title} price={item.price} location={item.location} key={item.id} />
                         </Col>
                     </a>
                 ))}
