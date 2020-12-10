@@ -11,7 +11,7 @@ const CardList = (props: IProject) => {
                 <Button type="primary" style={{ fontWeight: "bold" }} >{props.category}</Button>
             </Row>
             <Row style={{ marginTop: 10 }}>
-                {props.description}
+                {props.title}
             </Row>
             <Typography.Text type="secondary">
                 {props.location}

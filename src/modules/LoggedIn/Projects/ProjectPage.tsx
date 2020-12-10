@@ -1,20 +1,22 @@
 import React from 'react';
 import "./ProjectPage.css";
-import { Layout, Typography, Row, Col, Input, Select, Button, message, Avatar, Drawer, Radio, Space, Anchor, BackTop } from 'antd'
+import { Layout, Typography, Row, Col, Card, Input, Select, Button, message, Avatar, Drawer, Radio, Space, Anchor, BackTop } from 'antd'
 import { UserOutlined, UpCircleOutlined } from '@ant-design/icons';
 import { useHistory, Link } from "react-router-dom"
 import NewCardList from './NewCardList';
 import Categories from './Categories';
 import "../../../App.css";
 import firebase from '../../firebase'
-const { Search } = Input;
+import { IProject, productListDemo } from "./ProjectListDumy"
+import CardList from "../../../Components/CardList"
 const { Option } = Select;
+const { Search } = Input;
 
 const ProjectPage = () => {
   const [visible, setVisible] = React.useState(false);
-  const [placement, setPlacement] = React.useState('left');
+  const [query, setQuery] = React.useState('');
+  const [suggestion, setSuggestion] = React.useState<any>([]);
   let history = useHistory()
-  const onSearch = () => console.log("coba");
 
   const showDrawer = () => {
     setVisible(true)
@@ -24,12 +26,26 @@ const ProjectPage = () => {
     setVisible(false);
   };
 
+  React.useEffect(() => {
+    const filteredItems = productListDemo.filter((item => {
+      return item.title.toLowerCase().includes(query.toLowerCase())
+    }))
+    setSuggestion(filteredItems);
+  }, [query])
+
   if (!firebase.getCurrentUsername()) {
     message.info("please loggin first")
     history.push("/auth")
     return null
   }
 
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(event.target.value);
+  }
+
+
+  console.log(query)
+  console.log(suggestion)
   return (
     <Layout>
       <Layout.Header style={{ backgroundColor: '#fff' }}>
@@ -51,7 +67,7 @@ const ProjectPage = () => {
             </Select>
           </Col>
           <Col className='navbar-search' >
-            <Search placeholder="input search text" onSearch={onSearch} enterButton style={{ marginTop: 15, minWidth: 300 }} />
+            <Search placeholder="Temukan produk yang anda inginkan..." value={query} onChange={handleInputChange} allowClear enterButton style={{ marginTop: 15, minWidth: 300 }} />
           </Col>
           <Col className='navbar-search' >
             <Avatar icon={<UserOutlined />} /> <strong>Hello, {firebase.getCurrentUsername()}</strong>
@@ -76,9 +92,22 @@ const ProjectPage = () => {
           </Col>
         </Row>
       </Layout.Header>
-      <Layout.Content style={{ padding: 50 }}>
-        <Categories />
-        <NewCardList />
+      <Layout.Content style={{ padding: 50, marginBottom: '10vh' }}>
+        {query ? <Row align="middle" gutter={[16, 24]} style={{ padding: 50 }} className="card-list" > {suggestion.map((props: IProject) => {
+          return (
+            <a href="/project/detail">
+              <Col>
+                <CardList category={props.category} id={props.id} image={props.image} location={props.location} price={props.price} title={props.title} />
+              </Col>
+            </a>
+          )
+        })} </Row> :
+          <Layout.Content style={{ padding: 27 }}>
+            <Categories />
+            <NewCardList />
+          </Layout.Content>
+
+        }
       </Layout.Content>
       <Layout.Footer style={{ textAlign: 'center' }}>
         <div className="copyright">Copyright &copy; 2020, Create By Yukafi & Shiva</div>
